@@ -50,6 +50,7 @@ def search(query, DB= "PPlqqUxaMfzL.json", top = 3):
     bi = FindBest(v,f,q)
     print(bi)
     files = []
+    top = min(top, len(bi))
     for i in range(top):
         files.append(f[bi[i]])
 
