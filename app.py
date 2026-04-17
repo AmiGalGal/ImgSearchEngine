@@ -61,7 +61,7 @@ class App:
             tk_img = ImageTk.PhotoImage(img)
 
             lbl = tk.Label(self.frame, image=tk_img)
-            lbl.image = tk_img  # prevent garbage collection
+            lbl.image = tk_img
             lbl.pack(side="left", padx=10)
 
             self.image_labels.append(lbl)
