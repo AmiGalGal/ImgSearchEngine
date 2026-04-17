@@ -30,15 +30,12 @@ def Createjson(vectors, files, output):
 
     for vector, filename in zip(vectors, files):
 
-        # CASE 1: CLIP model output (BaseModelOutputWithPooling)
         if hasattr(vector, "pooler_output"):
             vector = vector.pooler_output
 
-        # CASE 2: torch tensor
         if torch.is_tensor(vector):
             vector = vector.detach().cpu().numpy()
 
-        # CASE 3: numpy already
         vector = np.array(vector).tolist()
 
         data.append({
