@@ -5,7 +5,7 @@ It runs completely offline on your machine — no APIs, no cloud services, and n
 ---
 
 ## 🔍 How it works
-- Images are encoded into 500-dimensional vectors using CLIP's image encoder
+- Images are encoded into 512-dimensional vectors using CLIP's image encoder
 - When you search, your text query is encoded using CLIP's text encoder into the same 512-dimensional space
 - The system compares your query vector against all image vectors using cosine similarity
 - Results are ranked by similarity and returned to the user
