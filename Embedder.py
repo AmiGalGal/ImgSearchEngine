@@ -38,10 +38,8 @@ def TextToVector(text):
 def similarity(query_emb, image_emb):
     return util.cos_sim(query_emb, image_emb)
 
-x = TextToVector("toilet")
+#x = TextToVector("Black")
 #print(type(x))
-
-y = ImgToVector(r"C:\Users\amiel\PycharmProjects\PythonProject\ImgSearchEngine\Files\Balls4.png")
+#y = ImgToVector(r"C:\Users\amiel\PycharmProjects\PythonProject\ImgSearchEngine\Files\Balls4.png")
 #print(type(y))
-
 #print(similarity(x, y))
