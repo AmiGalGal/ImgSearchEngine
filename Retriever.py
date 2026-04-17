@@ -16,7 +16,7 @@ def load_json(file_path):
 
     for item in data:
         vec = np.array(item["vector"], dtype=np.float32)
-        vectors.append(torch.tensor(vec))   # 🔥 convert here
+        vectors.append(torch.tensor(vec))
         filenames.append(item["filename"])
 
     return vectors, filenames
